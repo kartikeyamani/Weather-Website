@@ -5,6 +5,7 @@ const forecast=require('/Node/web-server/src/utils/forecast')
 const geocode=require('/Node/web-server/src/utils/geocode')
 
 const app=express()
+const port=process.env.PORT ||3000
 
 const publicdirectory=path.join(__dirname,'../public')
 const partialpath=path.join(__dirname,'/partials')
@@ -99,6 +100,6 @@ app.get('*',(req,res)=>{
 
 
 
-app.listen(3000,()=>{
-    console.log("server is upon port 3000")
+app.listen(port,()=>{
+    console.log("server is upon port"+port)
 })
