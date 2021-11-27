@@ -28,8 +28,8 @@ weatherform.addEventListener('submit',(e)=>{
             para2.textContent="Temperature : "+data.Temperature+" degrees"
            para3.textContent="Humidity : "+data.Humidity+"%"
            para4.textContent="Weather is "+data.Weather
-           para5.textContent="But it Feels Like"+data.feelslike+"degrees"
-           para6.textContent="Atmospheric pressure is"+data.atm
+           para5.textContent="But it Feels Like  "+data.feelslike+"degrees"
+           para6.textContent="Atmospheric pressure is  "+data.atm
         }
     })
 })
